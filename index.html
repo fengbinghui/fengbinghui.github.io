@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="dark">
+<html lang="zh-CN" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Feng Binghui · AI 应用工程 / Java 后端 / 全栈</title>
-  <meta name="description" content="Feng Binghui 的个人主页：AI 应用工程、Java 后端与全栈开发。代表项目 feiyu-ai（企业级 AI Agent 应用平台）、OISYS、CommHeatManage。" />
+  <meta name="description" content="Feng Binghui 的个人主页：已毕业（人工智能学院），专注 AI 应用工程、Java 后端与全栈开发。代表项目 feiyu-ai（企业级 AI Agent 应用平台）、OISYS、CommHeatManage。" />
   <meta name="author" content="Feng Binghui" />
+  <meta name="theme-color" content="#ffffff" />
   <meta property="og:title" content="Feng Binghui · AI 应用工程 / Java 后端 / 全栈" />
   <meta property="og:description" content="把 LLM 能力落成可交付的产品：RAG · Agent · MCP · 流式对话 · 工程化" />
   <meta property="og:type" content="website" />
@@ -13,264 +14,288 @@
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <div class="bg-glow" aria-hidden="true"></div>
-
-  <header class="nav" id="nav">
-    <a class="nav__brand" href="#top">
-      <span class="nav__logo">FB</span>
-      <span class="nav__name">Feng Binghui</span>
-    </a>
-    <nav class="nav__links" aria-label="主导航">
-      <a href="#about">关于</a>
-      <a href="#projects">项目</a>
-      <a href="#skills">技术栈</a>
-      <a href="#practice">工程实践</a>
-      <a href="#timeline">轨迹</a>
-    </nav>
-    <div class="nav__actions">
-      <button class="icon-btn" id="theme-toggle" aria-label="切换主题" title="切换主题">◐</button>
-      <a class="btn btn--small btn--ghost" href="https://github.com/fengbinghui" target="_blank" rel="noopener">GitHub ↗</a>
+  <!-- ============ 全局导航（Apple 风格毛玻璃） ============ -->
+  <header class="gnav" id="nav">
+    <div class="gnav__inner">
+      <a class="gnav__brand" href="#top" aria-label="回到顶部">
+        <span class="gnav__logo">FB</span>
+        <span class="gnav__name">Feng Binghui</span>
+      </a>
+      <nav class="gnav__links" aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#work">项目</a>
+        <a href="#stack">技术栈</a>
+        <a href="#engineering">工程实践</a>
+        <a href="#journey">轨迹</a>
+      </nav>
+      <div class="gnav__actions">
+        <button class="theme-btn" id="theme-toggle" aria-label="切换深浅色" title="切换深浅色">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </button>
+        <a class="gnav__github" href="https://github.com/fengbinghui" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
     </div>
   </header>
 
   <main id="top">
-    <!-- ================= HERO ================= -->
+    <!-- ============ HERO ============ -->
     <section class="hero">
-      <div class="hero__inner">
-        <p class="hero__eyebrow reveal">AI APPLICATION ENGINEERING · JAVA BACKEND · FULL-STACK</p>
-        <h1 class="hero__title reveal">
-          Hi, 我是 <span class="grad">Feng Binghui</span><br />
-          把 LLM 能力落成可交付的产品
-        </h1>
-        <p class="hero__desc reveal">
-          人工智能学院毕业，专注 <strong>AI 应用工程</strong> 与 <strong>后端 / 全栈开发</strong>。
-          做过企业级 AI Agent 平台、教务考勤系统与社区健康管理系统；
-          关心 RAG 召回质量、Agent 工具编排、上下文成本、可观测性与安全边界。
-        </p>
-        <div class="hero__actions reveal">
-          <a class="btn btn--primary" href="https://github.com/fengbinghui/feiyu-ai" target="_blank" rel="noopener">查看代表项目</a>
-          <a class="btn btn--ghost" href="https://github.com/fengbinghui" target="_blank" rel="noopener">GitHub 主页 ↗</a>
-        </div>
-        <div class="hero__stats reveal">
-          <div class="stat"><span class="stat__num" data-count="13">13</span><span class="stat__label">Maven 模块</span></div>
-          <div class="stat"><span class="stat__num" data-count="152">152</span><span class="stat__label">后端接口</span></div>
-          <div class="stat"><span class="stat__num" data-count="28">28</span><span class="stat__label">单元测试</span></div>
-          <div class="stat"><span class="stat__num" data-count="6">6</span><span class="stat__label">接入模型</span></div>
-        </div>
+      <p class="hero__eyebrow reveal">AI APPLICATION ENGINEERING · JAVA BACKEND · FULL-STACK</p>
+      <h1 class="hero__title reveal">
+        我把 <span class="hero__grad">LLM 能力</span><br />落成可交付的产品
+      </h1>
+      <p class="hero__lede reveal">
+        已毕业（人工智能学院），专注 <strong>AI 应用工程</strong> 与 <strong>后端 / 全栈开发</strong>。
+        做过企业级 AI Agent 平台、教务考勤系统与社区健康管理系统。
+      </p>
+      <div class="hero__actions reveal">
+        <a class="btn btn--primary" href="https://github.com/fengbinghui/feiyu-ai" target="_blank" rel="noopener">查看代表项目</a>
+        <a class="link-more" href="https://github.com/fengbinghui" target="_blank" rel="noopener">GitHub 主页 <span aria-hidden="true">›</span></a>
       </div>
     </section>
 
-    <!-- ================= ABOUT ================= -->
+    <!-- ============ 数字带 ============ -->
+    <section class="statband" aria-label="项目数据">
+      <div class="statband__inner">
+        <div class="stat reveal"><span class="stat__num" data-count="13">13</span><span class="stat__label">Maven 模块</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="152">152</span><span class="stat__label">后端接口</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="28">28</span><span class="stat__label">单元测试</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="6">6</span><span class="stat__label">接入模型</span></div>
+      </div>
+    </section>
+
+    <!-- ============ 关于 ============ -->
     <section class="section" id="about">
       <div class="section__head reveal">
-        <span class="section__kicker">01 — ABOUT</span>
+        <p class="section__eyebrow">01 — ABOUT</p>
         <h2>关于我</h2>
       </div>
       <div class="about">
         <div class="about__text reveal">
-          <p>
-            我的方式是 <strong>"从跑通到可交付"</strong>：先让复杂系统真的能跑起来，再补安全、补边界、补可观测，
+          <p class="about__lead">
+            我的方式是 <strong>“从跑通到可交付”</strong>：先让复杂系统真的能跑起来，再补安全、补边界、补可观测，
             最后用测试与文档让它可以被维护和交接。
           </p>
           <p>
             在 <a href="https://github.com/fengbinghui/feiyu-ai" target="_blank" rel="noopener">feiyu-ai</a> 中，
             我完成了多模型接入、知识库 RAG、MCP 工具、流式对话与文生图 / OCR / Text2SQL 的落地，
-            并补齐了 RBAC、审计、用量统计、分页与 DTO 校验、Flyway 版本化和 CI。
+            并补齐了 RBAC、审计、用量统计、服务端分页与 DTO 校验、Flyway 版本化和 CI。
           </p>
           <p>
-            除此之外，我也做过教务考勤系统（OISYS）和社区健康管理系统（CommHeatManage），
+            也做过教务考勤系统（OISYS）与社区健康管理系统（CommHeatManage），
             用 Spring Boot + Vue 完成前后端分离的完整交付。
           </p>
-          <ul class="about__list">
-            <li><span>🎯</span>目标：做"能上线、可维护、有数据支撑"的 AI 应用，而不止步于 Demo</li>
-            <li><span>🧠</span>深入：RAG 召回、Agent 工具编排、上下文与成本控制、可观测性、安全边界</li>
-            <li><span>🧱</span>习惯：写文档、写测试、做版本化迁移、用 CI 兜底</li>
-          </ul>
         </div>
-        <aside class="card about__side reveal">
-          <h3>现在在做什么</h3>
-          <ul class="timeline-mini">
-            <li><span class="dot dot--live"></span>迭代 feiyu-ai：企业级 AI Agent 平台</li>
-            <li><span class="dot"></span>补 AI 理论与工程评测知识</li>
-            <li><span class="dot"></span>整理开源项目与工程笔记</li>
+        <aside class="now-card reveal">
+          <p class="now-card__label">现在在做什么</p>
+          <ul class="now-list">
+            <li><span class="dot dot--live" aria-hidden="true"></span>迭代 feiyu-ai：企业级 AI Agent 平台</li>
+            <li><span class="dot" aria-hidden="true"></span>补 AI 理论与工程评测知识</li>
+            <li><span class="dot" aria-hidden="true"></span>整理开源项目与工程笔记</li>
           </ul>
-          <div class="about__links">
-            <a class="btn btn--small btn--primary" href="https://github.com/fengbinghui/feiyu-ai" target="_blank" rel="noopener">feiyu-ai ↗</a>
-            <a class="btn btn--small btn--ghost" href="https://github.com/fengbinghui" target="_blank" rel="noopener">全部仓库 ↗</a>
-          </div>
+          <a class="link-more" href="https://github.com/fengbinghui/feiyu-ai" target="_blank" rel="noopener">了解 feiyu-ai <span aria-hidden="true">›</span></a>
         </aside>
       </div>
     </section>
 
-    <!-- ================= PROJECTS ================= -->
-    <section class="section" id="projects">
+    <!-- ============ 项目 ============ -->
+    <section class="section" id="work">
       <div class="section__head reveal">
-        <span class="section__kicker">02 — PROJECTS</span>
+        <p class="section__eyebrow">02 — PROJECTS</p>
         <h2>代表项目</h2>
       </div>
 
-      <article class="project project--featured reveal">
-        <div class="project__top">
-          <div>
-            <span class="tag tag--star">⭐ FEATURED</span>
-            <h3>feiyu-ai · 企业级 AI Agent 应用平台</h3>
-            <p class="project__sub">多模型接入 · Agent 编排 · 知识库 RAG · MCP 工具 · 流式对话 · 文生图 / OCR / Text2SQL</p>
-          </div>
-          <a class="btn btn--primary btn--small" href="https://github.com/fengbinghui/feiyu-ai" target="_blank" rel="noopener">源码 ↗</a>
-        </div>
-        <div class="project__body">
-          <div class="project__points">
-            <div class="point"><span class="point__icon">🧩</span><div><strong>RAG 工程化</strong><p>Tika 解析 → 800/120 切片 → 1024 维向量 → pgvector；向量 + 关键词双通道召回，重索引前清理旧向量。</p></div></div>
-            <div class="point"><span class="point__icon">⚡</span><div><strong>流式对话</strong><p>后端 WebFlux SSE，前端 fetch + ReadableStream；自定义事件协议，过程事件落库可回溯。</p></div></div>
-            <div class="point"><span class="point__icon">🛠</span><div><strong>Agent 工具编排</strong><p>LangChain4j Tool + 技能包 + MCP（HTTP/STDIO，Docker 白名单）；智能问数只读 SQL + 表级授权。</p></div></div>
-            <div class="point"><span class="point__icon">🛡</span><div><strong>工程化落地</strong><p>RBAC、风控、脱敏、审计异步化、11 资源分页 + DTO 校验、Flyway、28 单测 + E2E + CI。</p></div></div>
-          </div>
-          <div class="project__aside">
-            <div class="kpi"><span>13</span><small>Maven 模块</small></div>
-            <div class="kpi"><span>152</span><small>后端接口</small></div>
-            <div class="kpi"><span>21</span><small>业务表</small></div>
-            <div class="kpi"><span>28</span><small>单元测试</small></div>
-            <div class="tech-row">
-              <span class="chip">Java 17</span><span class="chip">Spring Boot 3</span><span class="chip">LangChain4j</span>
-              <span class="chip">Vue3</span><span class="chip">pgvector</span><span class="chip">MyBatis-Plus</span>
-              <span class="chip">Flyway</span><span class="chip">SSE</span><span class="chip">MCP</span>
-            </div>
+      <article class="tile tile--dark reveal">
+        <div class="tile__copy">
+          <p class="tile__tag">FEATURED</p>
+          <h3 class="tile__title">feiyu-ai</h3>
+          <p class="tile__sub">企业级 AI Agent 应用平台</p>
+          <p class="tile__desc">
+            多模型接入 · Agent 编排 · 知识库 RAG · MCP 工具 · 流式对话 · 文生图 / OCR / Text2SQL。
+            13 个 Maven 模块、152 个后端接口、21 张业务表；含 RBAC、审计、用量统计、分页与 DTO 校验、Flyway 与 28 个单元测试。
+          </p>
+          <div class="tile__actions">
+            <a class="btn btn--primary btn--sm" href="https://github.com/fengbinghui/feiyu-ai" target="_blank" rel="noopener">查看源码</a>
+            <a class="link-more link-more--light" href="https://github.com/fengbinghui/feiyu-ai" target="_blank" rel="noopener">更多 <span aria-hidden="true">›</span></a>
           </div>
         </div>
+        <figure class="tile__shot">
+          <img src="assets/img/feiyu-chat.png" alt="feiyu-ai 流式对话界面" loading="lazy" />
+        </figure>
       </article>
 
-      <div class="project-grid">
-        <article class="project card reveal">
-          <span class="tag">FULL-STACK</span>
-          <h3>OISYS · 教务 / 考勤管理系统</h3>
-          <p>前后端分离的教务与考勤管理：用户/角色/菜单权限、班级与课程、考勤设置与点名记录、登录日志；含数据库初始化脚本。</p>
-          <div class="tech-row">
-            <span class="chip">Spring Boot 2.7</span><span class="chip">MyBatis-Plus</span><span class="chip">Vue2</span><span class="chip">Element UI</span><span class="chip">MySQL</span>
-          </div>
-          <a class="link" href="https://github.com/fengbinghui/oisys" target="_blank" rel="noopener">查看仓库 ↗</a>
+      <div class="tile-row">
+        <article class="tile tile--light reveal">
+          <p class="tile__tag tile__tag--muted">FULL-STACK</p>
+          <h3 class="tile__title tile__title--sm">OISYS</h3>
+          <p class="tile__sub tile__sub--dark">教务 / 考勤管理系统</p>
+          <p class="tile__desc tile__desc--dark">
+            前后端分离：用户/角色/菜单权限、班级与课程、考勤设置与点名记录、登录日志。
+            Spring Boot 2.7 + MyBatis-Plus + Vue2 + Element UI。
+          </p>
+          <a class="link-more" href="https://github.com/fengbinghui/oisys" target="_blank" rel="noopener">查看项目 <span aria-hidden="true">›</span></a>
         </article>
 
-        <article class="project card reveal">
-          <span class="tag">FULL-STACK</span>
-          <h3>CommHeatManage · 社区健康管理系统</h3>
-          <p>社区健康档案与数据管理：账号与权限、健康报告、数据归档与统计图表；Spring Security + JWT 鉴权，附 API 文档与压测脚本。</p>
-          <div class="tech-row">
-            <span class="chip">Spring Boot 3.1</span><span class="chip">Spring Security</span><span class="chip">JWT</span><span class="chip">Vue3</span><span class="chip">ECharts</span>
-          </div>
-          <a class="link" href="https://github.com/fengbinghui/CommHeatManage" target="_blank" rel="noopener">查看仓库 ↗</a>
+        <article class="tile tile--light reveal">
+          <p class="tile__tag tile__tag--muted">FULL-STACK</p>
+          <h3 class="tile__title tile__title--sm">CommHeatManage</h3>
+          <p class="tile__sub tile__sub--dark">社区健康管理系统</p>
+          <p class="tile__desc tile__desc--dark">
+            社区健康档案与数据管理：账号与权限、健康报告、健康通知、数据归档与统计图表。
+            Spring Boot 3.1 + Spring Security/JWT + Vue3 + Element Plus + ECharts。
+          </p>
+          <a class="link-more" href="https://github.com/fengbinghui/CommHeatManage" target="_blank" rel="noopener">查看项目 <span aria-hidden="true">›</span></a>
         </article>
+      </div>
 
-        <article class="project card reveal">
-          <span class="tag tag--learn">LEARNING</span>
-          <h3>SpringMVC / SpringCloud 学习实践</h3>
-          <p>手写 SpringMVC 核心机制（前端控制器、视图解析、注解映射）；Spring Cloud Config 多环境配置中心实践。</p>
-          <div class="tech-row">
-            <span class="chip">Spring MVC</span><span class="chip">Spring Cloud</span><span class="chip">Config</span>
-          </div>
-          <div class="project__links">
-            <a class="link" href="https://github.com/fengbinghui/Spring-MVC_for_learn" target="_blank" rel="noopener">SpringMVC ↗</a>
-            <a class="link" href="https://github.com/fengbinghui/springcloud-config" target="_blank" rel="noopener">Config ↗</a>
-          </div>
-        </article>
+      <div class="learn-row reveal">
+        <span class="learn-row__label">学习与实验</span>
+        <a href="https://github.com/fengbinghui/Spring-MVC_for_learn" target="_blank" rel="noopener">SpringMVC 核心机制 ↗</a>
+        <span class="learn-row__sep" aria-hidden="true">·</span>
+        <a href="https://github.com/fengbinghui/springcloud-config" target="_blank" rel="noopener">Spring Cloud Config ↗</a>
       </div>
     </section>
 
-    <!-- ================= SKILLS ================= -->
-    <section class="section" id="skills">
+    <!-- ============ 截图带 ============ -->
+    <section class="gallery" aria-label="界面预览">
+      <div class="gallery__inner">
+        <figure class="gallery__item reveal">
+          <img src="assets/img/feiyu-overview.png" alt="feiyu-ai 平台概览" loading="lazy" />
+          <figcaption>平台概览</figcaption>
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="assets/img/feiyu-audit.png" alt="feiyu-ai 操作审计" loading="lazy" />
+          <figcaption>操作审计 · 只读日志与参数脱敏</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 技术栈 ============ -->
+    <section class="section" id="stack">
       <div class="section__head reveal">
-        <span class="section__kicker">03 — STACK &amp; TOOLING</span>
+        <p class="section__eyebrow">03 — STACK &amp; TOOLING</p>
         <h2>技术栈</h2>
       </div>
-      <div class="skills-grid">
-        <div class="card reveal">
+      <div class="stack-grid">
+        <div class="stack reveal">
           <h3>后端</h3>
-          <div class="tech-row">
-            <span class="chip chip--main">Java 17</span><span class="chip chip--main">Spring Boot 3</span>
-            <span class="chip">Spring Security</span><span class="chip">MyBatis-Plus</span>
-            <span class="chip">Sa-Token</span><span class="chip">REST / SSE</span>
-            <span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">Flyway</span>
-          </div>
+          <ul>
+            <li>Java 17 · Spring Boot 3</li>
+            <li>Spring Security · Sa-Token</li>
+            <li>MyBatis-Plus · REST / SSE</li>
+            <li>MySQL 8 · PostgreSQL · Flyway</li>
+          </ul>
         </div>
-        <div class="card reveal">
+        <div class="stack reveal">
           <h3>前端</h3>
-          <div class="tech-row">
-            <span class="chip chip--main">Vue 3</span><span class="chip chip--main">TypeScript</span>
-            <span class="chip">Vite</span><span class="chip">Pinia</span><span class="chip">Naive UI</span>
-            <span class="chip">Element Plus</span><span class="chip">Tailwind CSS</span><span class="chip">ECharts</span>
-          </div>
+          <ul>
+            <li>Vue 3 · TypeScript</li>
+            <li>Vite · Pinia</li>
+            <li>Naive UI · Element Plus</li>
+            <li>Tailwind CSS · ECharts</li>
+          </ul>
         </div>
-        <div class="card reveal">
+        <div class="stack reveal">
           <h3>AI / LLM</h3>
-          <div class="tech-row">
-            <span class="chip chip--ai">LangChain4j</span><span class="chip chip--ai">RAG</span>
-            <span class="chip chip--ai">Agent</span><span class="chip chip--ai">MCP</span>
-            <span class="chip chip--ai">Function Calling</span><span class="chip chip--ai">Prompt 工程</span>
-            <span class="chip chip--ai">pgvector</span><span class="chip chip--ai">多模态</span>
-          </div>
+          <ul>
+            <li>LangChain4j · RAG</li>
+            <li>Agent · Function Calling</li>
+            <li>MCP · Prompt 工程</li>
+            <li>pgvector · 多模态</li>
+          </ul>
         </div>
-        <div class="card reveal">
+        <div class="stack reveal">
           <h3>工程与工具</h3>
-          <div class="tech-row">
-            <span class="chip">Git</span><span class="chip">Maven</span><span class="chip">pnpm</span>
-            <span class="chip">Docker</span><span class="chip">GitHub Actions</span>
-            <span class="chip">Playwright</span><span class="chip">JUnit 5</span><span class="chip">Python</span>
+          <ul>
+            <li>Git · Maven · pnpm</li>
+            <li>Docker · GitHub Actions</li>
+            <li>JUnit 5 · Playwright</li>
+            <li>Python</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 工程实践 ============ -->
+    <section class="band" id="engineering">
+      <div class="band__inner">
+        <div class="section__head section__head--center reveal">
+          <p class="section__eyebrow">04 — HOW I BUILD</p>
+          <h2>工程实践</h2>
+          <p class="section__sub">“经验”不是术语的堆叠，而是面对复杂系统时的判断与取舍。</p>
+        </div>
+        <div class="practice-grid">
+          <div class="practice reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h10M4 17h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="18" cy="12" r="2.2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            <h3>架构边界</h3>
+            <p>模块化单体，依赖单向（server → 领域 → 公共）；按能力拆模块，先让复杂可调试，再谈拆分。</p>
+          </div>
+          <div class="practice reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6l-7-3Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>安全优先</h3>
+            <p>认证 / 授权 / 风控 / 脱敏 / 上传白名单 / 错误码收敛；每个边界用接口脚本验证，不靠“看起来没问题”。</p>
+          </div>
+          <div class="practice reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="6.5" rx="7" ry="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M5 6.5v11c0 1.7 3.1 3 7 3s7-1.3 7-3v-11" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            <h3>数据版本化</h3>
+            <p>Flyway 迁移 + baseline 接管存量库；迁移前备份、临时库演练；脚本只增不改，保证可回溯。</p>
+          </div>
+          <div class="practice reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6l1 3h3l1 3H4l1-3h3l1-3Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M5 9h14v11H5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="m9 14 2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>质量兜底</h3>
+            <p>单元测试 + 接口验收 + 真实浏览器 E2E + 类型检查 + CI；用“指标”而不是“感觉”判断是否回归。</p>
+          </div>
+          <div class="practice reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 19h16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="m7 15 4-4 3 3 5-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>可观测性</h3>
+            <p>操作审计 + 模型调用统计（Token / 耗时 / 成功率 / 配额）；没有可观测性的 AI 应用无法运维。</p>
+          </div>
+          <div class="practice reveal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <h3>AI 工程细节</h3>
+            <p>检索质量（TopK / 阈值 / 双通道）、上下文成本（记忆窗口）、工具安全（只读 SQL / 白名单），而不是只调 API。</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= PRACTICE ================= -->
-    <section class="section" id="practice">
+    <!-- ============ 轨迹 ============ -->
+    <section class="section" id="journey">
       <div class="section__head reveal">
-        <span class="section__kicker">04 — HOW I BUILD</span>
-        <h2>工程实践</h2>
-        <p class="section__sub">"经验"不是术语的堆叠，而是面对复杂系统时的判断与取舍。</p>
-      </div>
-      <div class="practice-grid">
-        <div class="practice reveal"><span class="practice__num">01</span><h3>架构边界</h3><p>模块化单体，依赖单向（server → 领域 → 公共）；按能力拆模块，先让复杂可调试，再谈拆分。</p></div>
-        <div class="practice reveal"><span class="practice__num">02</span><h3>安全优先</h3><p>认证 / 授权 / 风控 / 脱敏 / 上传白名单 / 错误码收敛；每个边界都用接口脚本验证，不靠"看起来没问题"。</p></div>
-        <div class="practice reveal"><span class="practice__num">03</span><h3>数据版本化</h3><p>Flyway 迁移 + baseline 接管存量库；迁移前备份、临时库演练；脚本只增不改，保证可回溯。</p></div>
-        <div class="practice reveal"><span class="practice__num">04</span><h3>质量兜底</h3><p>单元测试 + 接口验收 + 真实浏览器 E2E + 类型检查 + CI；用"指标"而不是"感觉"判断是否回归。</p></div>
-        <div class="practice reveal"><span class="practice__num">05</span><h3>可观测性</h3><p>操作审计 + 模型调用统计（Token / 耗时 / 成功率 / 配额）；没有可观测性的 AI 应用无法运维。</p></div>
-        <div class="practice reveal"><span class="practice__num">06</span><h3>AI 工程细节</h3><p>检索质量（TopK / 阈值 / 双通道）、上下文成本（记忆窗口）、工具安全（只读 SQL / 白名单），而不是只调 API。</p></div>
-      </div>
-    </section>
-
-    <!-- ================= TIMELINE ================= -->
-    <section class="section" id="timeline">
-      <div class="section__head reveal">
-        <span class="section__kicker">05 — JOURNEY</span>
+        <p class="section__eyebrow">05 — JOURNEY</p>
         <h2>编程轨迹</h2>
       </div>
-      <ol class="timeline">
-        <li class="reveal"><span class="timeline__year">2022</span><div class="timeline__body"><h3>开始系统学习编程</h3><p>注册 GitHub，从 Java 基础与 Web 开发入手。</p></div></li>
-        <li class="reveal"><span class="timeline__year">2023</span><div class="timeline__body"><h3>后端基础与全栈起步</h3><p>SpringMVC / SpringCloud 学习实践；完成电商、博客等全栈练手项目。</p></div></li>
-        <li class="reveal"><span class="timeline__year">2024</span><div class="timeline__body"><h3>阅读优秀开源项目</h3><p>研究 Vue 生态、权限体系与后台管理框架的实现方式。</p></div></li>
-        <li class="reveal"><span class="timeline__year">2025</span><div class="timeline__body"><h3>完整交付全栈系统</h3><p>社区健康管理系统：Spring Security + JWT、前后端分离、ECharts 报表。</p></div></li>
-        <li class="reveal"><span class="timeline__year">2026</span><div class="timeline__body"><h3>毕业 · AI 应用工程</h3><p>完成毕业设计与教务考勤系统；投入企业级 AI Agent 平台 feiyu-ai：RAG / Agent / MCP / SSE / 工程化落地。</p></div></li>
+      <ol class="journey">
+        <li class="reveal"><span class="journey__year">2022</span><div class="journey__body"><h3>开始系统学习编程</h3><p>注册 GitHub，从 Java 基础与 Web 开发入手。</p></div></li>
+        <li class="reveal"><span class="journey__year">2023</span><div class="journey__body"><h3>后端基础与全栈起步</h3><p>SpringMVC / SpringCloud 学习实践；完成电商、博客等全栈练手项目。</p></div></li>
+        <li class="reveal"><span class="journey__year">2024</span><div class="journey__body"><h3>阅读优秀开源项目</h3><p>研究 Vue 生态、权限体系与后台管理框架的实现方式。</p></div></li>
+        <li class="reveal"><span class="journey__year">2025</span><div class="journey__body"><h3>完整交付全栈系统</h3><p>社区健康管理系统：Spring Security + JWT、前后端分离、ECharts 报表。</p></div></li>
+        <li class="reveal"><span class="journey__year">2026</span><div class="journey__body"><h3>毕业 · AI 应用工程</h3><p>完成毕业设计与教务考勤系统；投入企业级 AI Agent 平台 feiyu-ai：RAG / Agent / MCP / SSE / 工程化落地。</p></div></li>
       </ol>
     </section>
 
-    <!-- ================= CONTACT ================= -->
-    <section class="section section--contact" id="contact">
-      <div class="contact reveal">
+    <!-- ============ CTA ============ -->
+    <section class="cta-section">
+      <div class="cta reveal">
         <h2>Let's build something real.</h2>
         <p>欢迎交流 AI 应用工程、后端架构与全栈实践。</p>
-        <div class="contact__actions">
-          <a class="btn btn--primary" href="https://github.com/fengbinghui" target="_blank" rel="noopener">GitHub · fengbinghui ↗</a>
-          <a class="btn btn--ghost" href="https://github.com/fengbinghui/feiyu-ai" target="_blank" rel="noopener">feiyu-ai ↗</a>
-          <a class="btn btn--ghost" href="https://github.com/fengbinghui?tab=repositories" target="_blank" rel="noopener">全部项目 ↗</a>
+        <div class="cta__actions">
+          <a class="btn btn--primary" href="https://github.com/fengbinghui" target="_blank" rel="noopener">GitHub · fengbinghui</a>
+          <a class="link-more" href="https://github.com/fengbinghui/feiyu-ai" target="_blank" rel="noopener">feiyu-ai <span aria-hidden="true">›</span></a>
+          <a class="link-more" href="https://github.com/fengbinghui?tab=repositories" target="_blank" rel="noopener">全部项目 <span aria-hidden="true">›</span></a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <span>© <span id="year">2026</span> Feng Binghui</span>
-    <span class="footer__dot">·</span>
-    <a href="https://github.com/fengbinghui/fengbinghui.github.io" target="_blank" rel="noopener">本站源码</a>
-    <span class="footer__dot">·</span>
-    <span>Built with HTML / CSS / JS，零依赖</span>
+    <div class="footer__inner">
+      <span>© <span id="year">2026</span> Feng Binghui</span>
+      <span class="footer__sep" aria-hidden="true">·</span>
+      <a href="https://github.com/fengbinghui/fengbinghui.github.io" target="_blank" rel="noopener">本站源码</a>
+      <span class="footer__sep" aria-hidden="true">·</span>
+      <span>Built with HTML / CSS / JS，零依赖</span>
+    </div>
   </footer>
 
   <script src="assets/main.js"></script>
